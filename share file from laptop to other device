@@ -1,0 +1,21 @@
+Make sure both the devices on the same network
+
+Laptop (Sender):
+You have a file report.pdf in /home/user/Documents.
+Start the Python server:
+
+bash
+Copy code
+cd /home/user/Documents
+python3 -m http.server 8000
+Other Device (Receiver):
+Open the browser and enter:
+
+cpp
+Copy code
+http://192.168.1.100:8000
+Download the report.pdf from the list.
+
+BONUS Tip:
+If you need to upload files from the receiver to the sender, you can use uploadserver, a Python package that allows file uploads via the browser. Let me know if you'd like instructions for setting that up!
+The file share unsecuarly
