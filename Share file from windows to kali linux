@@ -1,0 +1,30 @@
+On Windows:
+
+Open Command Prompt.
+
+Go to folder where file is located:
+
+cmd
+Copy code
+cd C:\path\to\your\file
+
+Run Python HTTP Server:
+
+cmd
+Copy code
+python -m http.server 8000
+(Use python3 if needed)
+
+🔵 Step 2: Download the File from Kali Linux
+On Kali, download using wget:
+
+bash
+Copy code
+wget http://WINDOWS_IP:8000/filename
+Example:
+
+bash
+Copy code
+wget http://192.168.1.50:8000/myfile.txt
+This will download the file to your current directory in Kali.
+
