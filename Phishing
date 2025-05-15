@@ -1,0 +1,20 @@
+1.Clone the zphisher website
+
+git clone --depth=1 https://github.com/htr-tech/zphisher.git
+
+2.go inside the folder zphisher
+
+cd Zphisher
+
+3.check zphisher.sh is present or not
+
+ls zphishe.sh
+
+4.run the zphisher.sh
+
+bash zphisher.sh
+
+5.select the option you want to hack
+6.use local host and custom is no
+
+
