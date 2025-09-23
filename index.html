@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Strength Checker</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Password Strength Checker</h1>
+        <div class="input-container">
+            <input type="password" id="passwordInput" placeholder="Enter your password...">
+            <span id="togglePassword" class="toggle-icon">👁️</span>
+        </div>
+        
+        <div id="analysis-container" class="analysis-container">
+            <h3>Password Analysis:</h3>
+            <ul id="criteria-list">
+                <li id="lowercase">Lowercase Letters (a-z)</li>
+                <li id="uppercase">Uppercase Letters (A-Z)</li>
+                <li id="numbers">Numbers (0-9)</li>
+                <li id="special">Special Characters (!@#)</li>
+                <li id="length">At least 8 characters long</li>
+            </ul>
+            <div class="strength-meter">
+                <div id="strength-bar" class="strength-bar"></div>
+            </div>
+            <p id="remarks" class="remarks">Enter a password to see analysis.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 25px;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+#passwordInput {
+    width: 100%;
+    padding: 12px 40px 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box; /* Important for padding */
+}
+
+.toggle-icon {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    user-select: none; /* Prevents text selection */
+}
+
+.analysis-container {
+    text-align: left;
+}
+
+#criteria-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+#criteria-list li {
+    margin-bottom: 8px;
+    color: #666;
+    transition: color 0.3s ease;
+}
+
+#criteria-list li.valid {
+    color: #28a745; /* Green for valid criteria */
+    text-decoration: line-through;
+}
+
+#criteria-list li.valid::before {
+    content: '✓ ';
+    font-weight: bold;
+}
+
+#criteria-list li:not(.valid)::before {
+    content: '✗ ';
+    font-weight: bold;
+}
+
+.strength-meter {
+    height: 10px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.strength-bar {
+    height: 100%;
+    width: 0;
+    background-color: #dc3545; /* Default: Red */
+    transition: width 0.4s ease, background-color 0.4s ease;
+}
+
+.remarks {
+    font-weight: 500;
+    margin-top: 10px;
+    font-size: 1.1em;
+    min-height: 25px;
+}
