@@ -1,7 +1,7 @@
 # 1. Hash them
 sha256sum fake_malware_sample.py suspicious_strings_sample.txt
 
-![Hash Results](hash_file_type.png)
+![Hash Results](images/hash_file_type.png)
 
 # 2. Check file type
 file fake_packed.bin
@@ -12,8 +12,8 @@ strings fake_malware_sample.py
 
 # 4. Check entropy
 binwalk -E fake_packed.bin
-![Entropy Analysis](ebtropy.png)
+![Entropy Analysis](images/ebtropy.png)
 
 # 5. Upload EICAR to VirusTotal
 sha256sum eicar_test.com
-![VirusTotal Hash](virustotal.png)
+![VirusTotal Hash](images/virustotal.png)
