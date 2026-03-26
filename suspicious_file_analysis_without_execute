@@ -1,22 +1,19 @@
 # 1. Hash them
-  sha256sum fake_malware_sample.py suspicious_strings_sample.txt
+sha256sum fake_malware_sample.py suspicious_strings_sample.txt
 
-![Project Logo](C:\Users\abhicDownloads\hash_file_type.png)
+![Hash Results](hash_file_type.png)
 
 # 2. Check file type
-  file fake_packed.bin
+file fake_packed.bin
 
 # 3. Extract strings
-  strings suspicious_strings_sample.txt
+strings suspicious_strings_sample.txt
 strings fake_malware_sample.py
 
 # 4. Check entropy
-  binwalk -E fake_packed.bin
-![Project Logo](C:\Users\abhic\Downloads\ebtropy.png)
+binwalk -E fake_packed.bin
+![Entropy Analysis](ebtropy.png)
 
-
-# 5. Upload EICAR to VirusTotal (hash only, for privacy)
+# 5. Upload EICAR to VirusTotal
 sha256sum eicar_test.com
-# Paste that hash at virustotal.com
-![Project Logo](C:\Users\abhic\Downloads\virustotal.png)
-
+![VirusTotal Hash](virustotal.png)
